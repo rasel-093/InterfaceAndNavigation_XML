@@ -7,12 +7,16 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.FragmentPagerAdapter
+import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager.widget.ViewPager
+import com.example.interfaceandnavigation_xml.model.User
 import com.google.android.material.tabs.TabLayout
 
 class MainActivity : AppCompatActivity() {
+    //Tab layout
     private lateinit var  tabLayout: TabLayout
     private lateinit var viewPager: ViewPager
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,9 +33,11 @@ class MainActivity : AppCompatActivity() {
 
         tabLayout.setupWithViewPager(viewPager)
         val vpAdapter: VPAdapter = VPAdapter(supportFragmentManager, FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT)
+
         vpAdapter.addFragment(ChatsFragment(), "Chats")
         vpAdapter.addFragment(StatusFragment(), "Status")
         vpAdapter.addFragment(CallsFragment(), "Calls")
+
         viewPager.adapter = vpAdapter
     }
 }

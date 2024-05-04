@@ -19,11 +19,15 @@
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tab_layout"
-        />
+        app:layout_constraintTop_toBottomOf="@id/tab_layout"
+        android:paddingTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:paddingBottom="20dp"
+      />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

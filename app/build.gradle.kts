@@ -25,6 +25,7 @@ android {
                 "proguard-rules.pro"
             )
         }
+        viewBinding.enable
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
