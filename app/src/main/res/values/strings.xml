@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">InterfaceAndNavigation_XML</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="status_fragment">Status Fragment</string>
+    <string name="chats_fragment">Chat Fragment</string>
+    <string name="calls_fragment">Calls Fragment</string>
+</resources>
