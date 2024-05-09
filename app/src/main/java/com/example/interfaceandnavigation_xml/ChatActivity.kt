@@ -10,6 +10,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.interfaceandnavigation_xml.bottomsheet.BottomSheetFragment
 import com.example.interfaceandnavigation_xml.model.Message
 
 class ChatActivity : AppCompatActivity() {
@@ -37,6 +38,7 @@ class ChatActivity : AppCompatActivity() {
 
         //Send message
         val sendBtn = findViewById<ImageButton>(R.id.sendBtn)
+        val attachmentBtn = findViewById<ImageButton>(R.id.attachmentBtn)
         val messageEt = findViewById<TextView>(R.id.msgEt)
 
         sendBtn.setOnClickListener {
@@ -48,5 +50,12 @@ class ChatActivity : AppCompatActivity() {
                 messageEt.text = null
             }
         }
+
+        attachmentBtn.setOnClickListener{
+            //Implement Bottom Sheet
+            val bottomSheetFragment = BottomSheetFragment()
+            bottomSheetFragment.show(supportFragmentManager, bottomSheetFragment.tag)
+        }
+
     }
 }
