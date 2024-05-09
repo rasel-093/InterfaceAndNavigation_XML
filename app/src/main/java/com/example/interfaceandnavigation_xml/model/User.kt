@@ -5,5 +5,6 @@ data class User(
     val name: String,
     val lastMsg: String,
     val time: String,
-    val profileImg: Int
+    val profileImg: Int,
+    val msg: ArrayList<Message>
 )
