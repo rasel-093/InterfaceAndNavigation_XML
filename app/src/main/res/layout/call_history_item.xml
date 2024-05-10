@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- call_history_item.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <!--- Caller photo -->
+    <ImageView
+        android:id="@+id/callerPhotoImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/profile_1"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+        <!-- Caller name -->
+        <TextView
+            android:id="@+id/callerNameTextView"
+            android:text="Caller name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:padding="5dp"
+            android:textStyle="bold"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            >
+            <!-- Call date -->
+            <TextView
+                android:id="@+id/callDateTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:text="January 1, 2024"
+                android:layout_marginBottom="4dp"/>
+
+            <!-- Call time -->
+            <TextView
+                android:id="@+id/callTimeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="10:00 AM"
+                android:layout_marginBottom="8dp"
+                android:padding="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <!--Call Icon-->
+    <ImageButton
+        android:id="@+id/callIconImageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/call_icon" />
+</LinearLayout>
